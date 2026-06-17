@@ -1,0 +1,27 @@
+{"_e":"root:init","_t":1781520417401,"format":"v0-jsonl","version":"56.1.15"}
+{"_e":"env:mode","_t":1781520417403,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1781520417405,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1781520417717,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1781520418180,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1781520421952,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1781520513480,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1781520513481,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1781520513776,"id":"3","total":1,"ms":295.1206}
+{"_e":"metro:client_log","_t":1781520542822,"level":"error","data":["Login failed:","{\"code\": 401, \"message\": \"Invalid credentials.\"}"]}
+{"_e":"metro:client_log","_t":1781524172686,"level":"error","data":["API Error:","[Error: Session expiree. Veuillez vous reconnecter.]"]}
+{"_e":"root:init","_t":1781524188767,"format":"v0-jsonl","version":"56.1.15"}
+{"_e":"env:mode","_t":1781524188769,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1781524188771,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1781524189009,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1781524189295,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1781524192892,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1781524352530,"id":"2","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1781524352530,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1781524352862,"id":"2","total":1,"ms":331.4634}
+{"_e":"metro:client_log","_t":1781530009573,"level":"error","data":["API Error:","[Error: Session expiree. Veuillez vous reconnecter.]"]}
+{"_e":"root:init","_t":1781704993869,"format":"v0-jsonl","version":"56.1.15"}
+{"_e":"env:mode","_t":1781704993871,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1781704993874,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1781704994192,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1781704994661,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1781704999039,"atlas":false,"workers":14,"host":"::","port":8081}
