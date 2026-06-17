@@ -1,5 +1,6 @@
-import {View, Text, Image, TextInput, StyleSheet, ScrollView, ActivityIndicator, Pressable,
+import {View, Text, TextInput, StyleSheet, ScrollView, ActivityIndicator, Pressable,
 } from 'react-native'
+import AppLogo from '../components/AppLogo';
 import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { apiCall } from '../api/client';
@@ -106,7 +107,7 @@ const Profile = ({ navigation }) => {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.container}>
         <View style={styles.logoContainer}>
-          <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode="contain" />
+          <AppLogo width={220} height={32} />
         </View>
         <View style={styles.card}>
           <Text style={styles.title}>Modifier mes informations</Text>

@@ -1,4 +1,5 @@
-import { View, Text, TextInput, StyleSheet, ActivityIndicator, ScrollView, Pressable, Image } from 'react-native';
+import { View, Text, TextInput, StyleSheet, ActivityIndicator, ScrollView, Pressable } from 'react-native';
+import AppLogo from '../components/AppLogo';
 import React, { useState } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { API_URL } from '../config/api';
@@ -65,11 +66,7 @@ export default function Register({ navigation }) {
             <View style={styles.container}>
                 <View style={styles.card}>
                     <View style={styles.logoContainer}>
-                        <Image 
-                            source={require('../assets/logo.png')} 
-                            style={styles.logo}
-                            resizeMode="contain"
-                        />
+                        <AppLogo width={220} height={32} />
                     </View>
                     <Text style={styles.eyebrow}>Event Manager</Text>
                     <Text style={styles.title}>Inscription</Text>

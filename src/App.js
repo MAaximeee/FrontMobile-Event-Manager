@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { NavigationContainer, createNavigationContainerRef } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Calendrier from './pages/Calendrier';
 import Home from './pages/Home';
 import Login from './pages/login';
 import Register from './pages/Register';
@@ -17,21 +18,16 @@ import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { colors, radius } from './theme';
 import { setSessionExpiredHandler } from './api/client';
+import {
+  TabCalendarIcon,
+  TabCreateIcon,
+  TabHomeIcon,
+  TabProfileIcon,
+} from './components/TabBarIcons';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const navigationRef = createNavigationContainerRef();
-
-function Onglet2() {
-  return (
-    <View style={styles.placeholderScreen}>
-      <View style={styles.placeholderCard}>
-        <Text style={styles.placeholderTitle}>Calendrier</Text>
-        <Text style={styles.placeholderText}>Cette section arrive bientot.</Text>
-      </View>
-    </View>
-  );
-}
 
 function Onglet3() {
   return (
@@ -53,7 +49,8 @@ function HomeNavigation() {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarShowIcon: false,
+        tabBarShowIcon: true,
+        tabBarShowLabel: true,
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: '700',
@@ -81,13 +78,15 @@ function HomeNavigation() {
         component={Home}
         options={{
           tabBarLabel: 'Accueil',
+          tabBarIcon: ({ color }) => <TabHomeIcon color={color} />,
         }}
       />
       <Tab.Screen
         name="Tab2"
-        component={Onglet2}
+        component={Calendrier}
         options={{
           tabBarLabel: 'Calendrier',
+          tabBarIcon: ({ color }) => <TabCalendarIcon color={color} />,
         }}
       />
       <Tab.Screen
@@ -95,7 +94,7 @@ function HomeNavigation() {
         component={CreateEvent}
         options={{
           tabBarLabel: 'CREER',
-          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color, fontWeight: '800' }}>+</Text>,
+          tabBarIcon: ({ color }) => <TabCreateIcon color={color} />,
         }}
       />
       <Tab.Screen
@@ -103,6 +102,7 @@ function HomeNavigation() {
         component={MyPage}
         options={{
           tabBarLabel: 'Profil',
+          tabBarIcon: ({ color }) => <TabProfileIcon color={color} />,
         }}
       />
     </Tab.Navigator>
